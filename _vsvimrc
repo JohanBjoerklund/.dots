@@ -1,0 +1,56 @@
+"novsvim_useeditordefaults
+vsvim_autocmd
+
+"allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+"store lots of :cmdline history
+set history=1000
+
+set incsearch   "find the next match as we type the search
+set hlsearch    "hilight searches by default
+set ignorecase  "ignore case when searching
+set smartcase   "but case sensitve if expression contains capital letters
+
+"indent settings
+"set shiftwidth=2
+"set softtabstop=2
+"set expandtab
+set autoindent
+
+
+" KEYMAPPINGS
+let mapleader=","
+"key mapping for saving file
+nmap <C-s> :w<CR>
+
+" remove shift when executing commands
+nmap . :
+
+
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
+" Disable arrrowkeys in normal mode
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+nnoremap <g><c> :vsc ReSharper.ReSharper_LineComment<cr>
+vnoremap <g><c> :vsc ReSharper.Resharper_BlockComment<cr>
+
+nnoremap <c><n> :vsc View.NextError<cr>
+vnoremap <c><p> :vsc View.PreviousError<cr>
+
+nnoremap <c><c><n> :vsc ReSharper.ReSharper_GotoNextErrorInSolution<cr>
+vnoremap <c><c><p> :vsc ReSharper.Resharper_GotoPrevErrorInSolution<cr>
+
+nnoremap <C-n> <down>
+nnoremap <C-p> <up>
+
+noremap <leader>nt :vsc Edit.NavigateToLollipop<cr>
