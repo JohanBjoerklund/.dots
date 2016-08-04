@@ -1,0 +1,10 @@
+{
+  "passfail": false,
+  "maxerr": 100,
+  "debug": false,
+  "devel": true ,
+  "es5": true,
+  "eqnull": false,
+  "plusplus": false,
+  "trailing": false
+}
