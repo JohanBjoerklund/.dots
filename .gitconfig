@@ -1,9 +1,7 @@
-[user]
-# Please adapt and uncomment the following lines:
-	name = Johan Björklund
-#	email = address@domain.local
+[include]
+        path = .gitconfig.user
 [core]
-	excludesfile = /.gitignore_global
+	excludesfile = .gitignore_global
         editor = vim
 [diff]
         tool = vimdiff
