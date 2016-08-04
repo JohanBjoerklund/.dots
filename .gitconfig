@@ -1,0 +1,38 @@
+[user]
+# Please adapt and uncomment the following lines:
+	name = Johan Björklund
+#	email = address@domain.local
+[core]
+	excludesfile = /.gitignore_global
+        editor = vim
+[diff]
+        tool = vimdiff
+[push]
+	default = simple
+[status]
+	submoduleSummary = true
+[diff]
+	submodule = log
+[github]
+        user = JohanBjoerklund
+[url "https://github.com/"]
+        insteadOf = gh:
+[color]
+        ui = true
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+[color "status"]
+        dded = yellow
+        changed = green
+        untracked = red
+[alias]
+        st = status
+        co = checkout
+        unstage = reset HEAD --
