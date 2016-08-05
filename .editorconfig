@@ -1,0 +1,16 @@
+# top-most Editorconfig file
+root = true
+
+[*]
+insert_final_newline = false
+trim_trailing_whitespace
+
+[*.{js,ts}]
+charset = utf-8
+indent_style = spaces
+
+[*.{js,json}]
+indent_size = 2
+
+[*.{ts,cs,html,cshtml}]
+indent_size = 4
