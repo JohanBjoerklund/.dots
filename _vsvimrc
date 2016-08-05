@@ -20,7 +20,7 @@ set autoindent
 
 
 " KEYMAPPINGS
-let mapleader=","
+let mapleader="\<space>"
 "key mapping for saving file
 nmap <C-s> :w<CR>
 
