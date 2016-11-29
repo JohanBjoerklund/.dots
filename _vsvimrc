@@ -27,6 +27,7 @@ nmap <C-s> :w<CR>
 " remove shift when executing commands
 nmap . :
 
+inoremap jk <Esc>
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
