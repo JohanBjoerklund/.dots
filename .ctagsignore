@@ -1,0 +1,9 @@
+.git
+.tmp
+.vscode
+
+node_modules
+obj
+bin
+typings
+_Deploy
