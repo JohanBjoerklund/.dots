@@ -19,6 +19,18 @@
 
       }
     ],
+    "arrow-body-style": [
+      "warn",
+      "as-needed"
+    ],
+    "arrow-parens": [
+      "warn",
+      "as-needed",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "arrow-spacing": "warn",
     "block-scoped-var": "error",
     "block-spacing": [
       "warn",
@@ -72,6 +84,10 @@
       "warn",
       "always"
     ],
+    "generator-star-spacing": [
+      "warn",
+      "before"
+    ],
     "indent": [
       "error",
       2,
@@ -121,7 +137,14 @@
     "no-bitwise": "error",
     "no-caller": "error",
     "no-console": "warn",
+    "no-confusing-arrow": [
+      "error",
+      {
+        "allowParens": true
+      }
+    ],
     "no-debugger": "error",
+    "no-duplicate-imports": "warn",
     "no-empty-function": "error",
     "no-else-return": "error",
     "no-div-regex": "error",
@@ -163,6 +186,7 @@
     "no-use-before-define": "error",
     "no-useless-call": "warn",
     "no-useless-concat": "error",
+    "no-useless-rename": "error",
     "no-useless-return": "error",
     "no-unreachable": "error",
     "no-warning-comments": "warn",
@@ -186,6 +210,18 @@
         "classes": "always"
       }
     ],
+    "prefer-arrow-callback": "warn",
+    "prefer-const": "warn",
+    "prefer-destructuring": [
+      "warn",
+      {
+        "array": false,
+        "object": true
+      }
+    ],
+    "prefer-rest-params": "warn",
+    "prefer-spread": "warn",
+    "prefer-template": "warn",
     "quotes": [
       "error",
       "single"
@@ -204,14 +240,19 @@
       "warn",
       {
         "words": true,
-        "nowords": false
+        "nonwords": false
       }
+    ],
+    "template-curly-spacing": [
+      "warn",
+      "never"
     ],
     "vars-on-top": "warn",
     "semi": [
       "error",
       "never"
     ],
+    "yield-star-spacing": "warn",
     "yoda": "error"
   }
 }
