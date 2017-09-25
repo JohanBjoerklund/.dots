@@ -4,6 +4,7 @@ images/
 tmp/
 temp/
 vendor/
+dist/
 .tschache/
 .git/
 .vs/
@@ -14,7 +15,6 @@ node_modules/
 *.csv
 *.tsv
 *.tmp
-*.js
 *.scss
 *.old
 *.xml
