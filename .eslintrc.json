@@ -117,7 +117,6 @@
         "max": 1
       }
     ],
-    "new-cap": "error",
     "newline-after-var": [
       "warn",
       "always"
@@ -154,13 +153,6 @@
     "no-lone-blocks": "warn",
     "no-lonely-if": "warn",
     "no-loop-func": "error",
-    "no-magic-numbers": [
-      "error",
-      {
-        "ignoreArrayIndexes": true,
-        "enforceConst": true
-      }
-    ],
     "no-multi-assign": "error",
     "no-multi-spaces": [
       "warn",
