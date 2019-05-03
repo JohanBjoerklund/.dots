@@ -1,0 +1,63 @@
+{
+  "fileOptions": {
+    "userExcludeSearchPatterns": [
+      "**/node_modules/**/*",
+      "**/dist/**/*"
+    ]
+  },
+  "formattingOptions": {
+   "useTabs": false,
+   "tabSize": 4,
+   "indentationSize": 4,
+   "spacingAfterMethodDeclarationName": false,
+   "spaceWithinMethodDeclarationParenthesis": false,
+   "spaceBetweenEmptyMethodDeclarationParentheses": false,
+   "spaceAfterMethodCallName": false,
+   "spaceWithinMethodCallParentheses": false,
+   "spaceBetweenEmptyMethodCallParentheses": false,
+   "spaceAfterControlFlowStatementKeyword": true,
+   "spaceWithinExpressionParentheses": false,
+   "spaceWithinCastParentheses": false,
+   "spaceWithinOtherParentheses": false,
+   "spaceAfterCast": false,
+   "spacesIgnoreAroundVariableDeclaration": false,
+   "spaceBeforeOpenSquareBracket": false,
+   "spaceBetweenEmptySquareBrackets": false,
+   "spaceWithinSquareBrackets": false,
+   "spaceAfterColonInBaseTypeDeclaration": true,
+   "spaceAfterComma": true,
+   "spaceAfterDot": false,
+   "spaceAfterSemicolonsInForStatement": true,
+   "spaceBeforeColonInBaseTypeDeclaration": true,
+   "spaceBeforeComma": false,
+   "spaceBeforeDot": false,
+   "spaceBeforeSemicolonsInForStatement": false,
+   "spacingAroundBinaryOperator": "single",
+   "indentBraces": false,
+   "indentBlock": true,
+   "indentSwitchSection": true,
+   "indentSwitchCaseSection": true,
+   "indentSwitchCaseSectionWhenBlock": true,
+   "wrappingPreserveSingleLine": true,
+   "wrappingKeepStatementsOnSingleLine": false,
+   "newLinesForBracesInTypes": true,
+   "newLinesForBracesInMethods": true,
+   "newLinesForBracesInProperties": true,
+   "newLinesForBracesInAccessors": true,
+   "newLinesForBracesInAnonymousMethods": true,
+   "newLinesForBracesInControlBlocks": true,
+   "newLinesForBracesInAnonymousTypes": true,
+   "newLinesForBracesInObjectCollectionArrayInitializers": true,
+   "newLinesForBracesInLambdaExpressionBody": true,
+   "newLineForElse": true,
+   "newLineForCatch": true,
+   "newLineForFinally": true,
+   "newLineForMembersInObjectInit": true,
+   "newLineForMembersInAnonymousTypes": true,
+   "newLineForClausesInQuery": true
+  },
+  "cake": {
+    "enabled": true,
+    "bakeryPath": "C:/Program Files/Cake/Cake.Bakery.exe"
+  }
+}
