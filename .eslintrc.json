@@ -61,7 +61,7 @@
     ],
     "consistent-this": [
       "error",
-      "self"
+      "_this"
     ],
     "default-case": "error",
     "dot-location": [
