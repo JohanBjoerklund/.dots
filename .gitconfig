@@ -75,5 +75,7 @@
 
 [pull]
 	rebase = true
+[rebase]
+        autostash = true
 [credential]
 	helper = manager
