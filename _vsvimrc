@@ -13,9 +13,9 @@ set ignorecase  "ignore case when searching
 set smartcase   "but case sensitve if expression contains capital letters
 
 "indent settings
-"set shiftwidth=2
-"set softtabstop=2
-"set expandtab
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 set autoindent
 
 
@@ -42,16 +42,25 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-nnoremap <g><c> :vsc ReSharper.ReSharper_LineComment<cr>
-vnoremap <g><c> :vsc ReSharper.Resharper_BlockComment<cr>
+nnoremap <g><c> :vsc Edit.CommentSelection<cr>
+vnoremap <g><c> :vsc Edit.CommentSelection<cr>
+nnoremap <leader>fu :vsc Edit.FindAllReferences<cr>
+nnoremap <leader>fi :vsc Edit.GoToImplementation<cr>
+nnoremap gd :vsc Edit.GoToDefinition<cr>
+nnoremap <leader>fm :vsc Edit.ListMemebers<cr>
+nnoremap <leader><space> :vsc View.QuickActions<cr>
+
+vnoremap <leader>c :vsc Edit.Copy<cr>
+nnoremap <leader>v :vsd Edit.Past<cr>
 
 nnoremap <c><n> :vsc View.NextError<cr>
-vnoremap <c><p> :vsc View.PreviousError<cr>
-
-nnoremap <c><c><n> :vsc ReSharper.ReSharper_GotoNextErrorInSolution<cr>
-vnoremap <c><c><p> :vsc ReSharper.Resharper_GotoPrevErrorInSolution<cr>
+nnoremap <c><p> :vsc View.PreviousError<cr>
+nnoremap <C-w><C-s> :vsc Window.SplitWindowHorizontally<cr>
+nnoremap <C-w><C-v> :vsc Window.SplitWindowVertically<cr>
+nnoremap <C-w><l> :vsc Window.NextPlitPane<cr>
+nnoremap <C-w><j> :vsc Window.PreviousPlitPane<cr>
 
 nnoremap <C-n> <down>
 nnoremap <C-p> <up>
 
-noremap <leader>nt :vsc Edit.NavigateToLollipop<cr>
+nnoremap <leader>nt :vsc View.SolutionExplorer<cr>
