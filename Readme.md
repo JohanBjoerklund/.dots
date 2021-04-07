@@ -2,11 +2,10 @@
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 # Install extras bucket for scoop
-scoop bucket add extras
+scoop bucket add nerd-fonts
 
 # Install applications with scoop
 scoop install 7zip
-scoop install cmder
 scoop install fzf
 scoop install git
 scoop install vim
