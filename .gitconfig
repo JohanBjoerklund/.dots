@@ -79,6 +79,3 @@
         autostash = true
 [credential]
 	helper = manager
-[user]
-	email = johanx.bjorklund@hm.com
-	name = Johan Bjorklund
