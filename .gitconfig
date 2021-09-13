@@ -1,5 +1,8 @@
-[include]
-        path = .gitconfig.user
+[user]
+        email = johan.bjorklund@protonmail.ch
+        name = Johan Björklund
+[includeIf "gitdir:~/work/"]
+        path = .work.gitconfig
 [core]
 	excludesfile = .gitignore_global
         editor = vim
