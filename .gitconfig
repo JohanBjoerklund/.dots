@@ -81,3 +81,5 @@
 	rebase = true
 [rebase]
         autostash = true
+[checkout]
+        defaultRemote = origin
