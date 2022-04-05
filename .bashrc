@@ -130,5 +130,7 @@ export NVM_DIR="$HOME/.nvm"
 
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh"  ]; then
   GIT_PROMPT_ONLY_IN_REPO=1
+  GIT_DISCOVERY_ACROSS_FILESYSTEM=1 # Find repos from WSL
+  GIT_PROMPT_THEME=Single_line_Dark
   source $HOME/.bash-git-prompt/gitprompt.sh
 fi
