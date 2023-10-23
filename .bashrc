@@ -134,3 +134,40 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh"  ]; then
   GIT_PROMPT_THEME=Single_line_Dark
   source $HOME/.bash-git-prompt/gitprompt.sh
 fi
+
+complete -C /usr/bin/terraform terraform
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+
+export PNPM_HOME="/home/johanbjorklund/.local/share/pnpm"
+
+export NVIM_HOME="/home/johanbjorklund/.local/bin/nvim.appimage"
+export PATH="$PNPM_HOME:$NVIM_HOME:$GOROOT/bin:$GOPATH/bin:$PATH"
+
+export BROWSER='/mnt/c/Windows/explorer.exe'
+
+# Auto start docker when WSL starts.
+if grep -q "microsoft" /proc/version > /dev/null 2>&1; then
+    if service docker status 2>&1 | grep -q "is not running"; then
+        wsl.exe --distribution "${WSL_DISTRO_NAME}" --user root \
+            --exec /usr/sbin/service docker start > /dev/null 2>&1
+    fi
+fi
+
+# tabtab source for packages
+# uninstall by removing these lines
+[ -f ~/.config/tabtab/bash/__tabtab.bash ] && . ~/.config/tabtab/bash/__tabtab.bash || true
+
+export DENO_INSTALL="/home/johanbjorklund/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+if [ -f ~/.ssh/id_ed25519 ]; then
+  ssh-add /home/johanbjorklund/.ssh/id_ed25519  
+fi
+
+# XDG
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
