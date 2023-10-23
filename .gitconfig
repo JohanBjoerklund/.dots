@@ -5,7 +5,7 @@
         path = .work.gitconfig
 [core]
 	excludesfile = .gitignore_global
-        editor = vim
+        editor = ~/.local/bin/nvim.appimage
         # Don't consider trailing space change as a cause for merge conflicts
         whitespace = -trailing-space
 	autocrlf = input
@@ -76,6 +76,7 @@
         oops = commit --amend --no-edit
         review-local = "!git lg @{push}.."
 	s = status -s
+	uncommit = reset HEAD^
 
 [pull]
 	rebase = true
