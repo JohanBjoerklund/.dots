@@ -7,7 +7,7 @@ trim_trailing_whitespace
 
 [*.{js,ts}]
 charset = utf-8
-indent_style = spaces
+indent_style = space
 
 [*.{js,json}]
 indent_size = 2
