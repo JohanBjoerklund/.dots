@@ -4,6 +4,7 @@ alias nvim="~/.local/bin/nvim.appimage"
 alias vim=nvim
 alias see='explorer.exe'
 alias pn=pnpm
+alias say="~/.local/share/say.sh"
 
 alias ll='ls -alF'
 alias la='ls -A'
