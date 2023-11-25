@@ -1,0 +1,13 @@
+name: node
+root: <%= @settings['workspace'] =%>
+
+windows:
+  - operate:
+    layout: main-vertical
+    panes:
+      - work:
+        - git s
+      - watch:
+        - docker ps
+  - edit:
+    - vim .
