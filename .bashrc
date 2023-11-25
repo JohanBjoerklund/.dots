@@ -87,20 +87,8 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -116,6 +104,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# add fzf support
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
@@ -124,6 +113,7 @@ export BAT_THEME="gruvbox-dark"
 
 export ASPNETCORE_ENVIRONMENT="Development"
 
+# add nvm support
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -141,9 +131,7 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 
 export PNPM_HOME="/home/johanbjorklund/.local/share/pnpm"
-
 export NVIM_HOME="/home/johanbjorklund/.local/bin/nvim.appimage"
-export PATH="$PNPM_HOME:$NVIM_HOME:$GOROOT/bin:$GOPATH/bin:$PATH"
 
 export BROWSER='/mnt/c/Windows/explorer.exe'
 
@@ -159,15 +147,17 @@ fi
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/bash/__tabtab.bash ] && . ~/.config/tabtab/bash/__tabtab.bash || true
 
-export DENO_INSTALL="/home/johanbjorklund/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
-if [ -f ~/.ssh/id_ed25519 ]; then
-  ssh-add /home/johanbjorklund/.ssh/id_ed25519  
-fi
+# if [ -f ~/.ssh/id_ed25519 ]; then
+#   ssh-add /home/johanbjorklund/.ssh/id_ed25519  
+# fi
 
 # XDG
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
+
+# PATH
+export PATH="$PNPM_HOME:$NVIM_HOME:$GOROOT/bin:$GOPATH/bin:$HOME/.local/share/say:$PATH"
+
+export EDITOR='vim'
