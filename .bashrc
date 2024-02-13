@@ -130,10 +130,8 @@ complete -C /usr/bin/terraform terraform
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 
-export PNPM_HOME="/home/johanbjorklund/.local/share/pnpm"
-export NVIM_HOME="/home/johanbjorklund/.local/bin/nvim.appimage"
-
-export BROWSER='/mnt/c/Windows/explorer.exe'
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export NVIM_HOME="$HOME/.local/bin/nvim.appimage"
 
 # Auto start docker when WSL starts.
 if grep -q "microsoft" /proc/version > /dev/null 2>&1; then
@@ -146,10 +144,6 @@ fi
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/bash/__tabtab.bash ] && . ~/.config/tabtab/bash/__tabtab.bash || true
-
-# if [ -f ~/.ssh/id_ed25519 ]; then
-#   ssh-add /home/johanbjorklund/.ssh/id_ed25519  
-# fi
 
 # XDG
 export XDG_CONFIG_HOME="$HOME/.config"

@@ -1,11 +1,11 @@
 [user]
-        email = johan.bjorklund@protonmail.ch
+        email = johan.bjorklund@proton.me
         name = Johan Björklund
 [includeIf "gitdir:~/work/"]
         path = .work.gitconfig
 [core]
 	excludesfile = .gitignore_global
-        editor = ~/.local/bin/nvim.appimage
+        editor = vim
         # Don't consider trailing space change as a cause for merge conflicts
         whitespace = -trailing-space
 	autocrlf = input
