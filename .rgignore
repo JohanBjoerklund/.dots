@@ -9,6 +9,7 @@ dist/
 .tschache/
 .git/
 .vs/
+*/node_modules/*
 node_modules/
 *.sql
 *.tags*
@@ -32,3 +33,5 @@ node_modules/
 .DS_Store
 *~
 .yarn/
+.next
+!.env*
